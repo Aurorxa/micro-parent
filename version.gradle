@@ -1,0 +1,17 @@
+// 该文件主要用来进行第三方库的依赖管理
+// 该文件中的内容是键值对结构
+ext {
+
+    version = [
+            "mybatisPlus": "3.0.5",
+            "swagger"    : "2.9.2",
+            "jjwtApi"    : "0.11.5"
+    ]
+
+    dependencies = [
+            "com.baomidou:mybatis-plus-boot-starter:${version.mybatisPlus}",
+            "io.jsonwebtoken:jjwt-api:${version.jjwtApi}",
+            "io.springfox:springfox-swagger2:${version.swagger}",
+            "io.springfox:springfox-swagger-ui:${version.swagger}"
+    ]
+}

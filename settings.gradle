@@ -1,0 +1,10 @@
+rootProject.name = 'micro-parent'
+include 'micro-bean'
+include 'micro-common'
+include 'micro-service'
+include 'micro-service:service-order'
+findProject(':micro-service:service-order')?.name = 'service-order'
+include 'micro-service:service-user'
+findProject(':micro-service:service-user')?.name = 'service-user'
+include 'micro-gateway'
+
